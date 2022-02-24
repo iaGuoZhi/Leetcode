@@ -13,9 +13,9 @@ public:
 
         vector<vector<int>> path_grid(m, vector<int>(n, 0));
         for(int i = 0; i < m; ++i){
-            for(int j = 0; j< n - 1; ++j){
+            for(int j = 0; j< n; ++j){
                 // right side
-                if(grid[i][j] == grid[i][j + 1] && grid[i][j] == 1){
+                if(j < n - 1 && grid[i][j] == grid[i][j + 1] && grid[i][j] == 1){
                     path_grid[i][j] = 1;
                 // left side
                 }else{
@@ -32,8 +32,8 @@ public:
         {
             i = 0;
             j = t;
-            while(i < m && && j >= 0 && j < n && grid[i][j] != 0){
-                if(grid[i][j] == 1){
+            while(i < m && j >= 0 && j < n && path_grid[i][j] != 0){
+                if(path_grid[i][j] == 1){
                     j += 1;
                 }else{
                     j -= 1;
@@ -47,6 +47,6 @@ public:
                 res.push_back(-1);
             }
         }
-        return ans;
+        return res;
     }
 };
