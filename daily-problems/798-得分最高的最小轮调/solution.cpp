@@ -21,16 +21,11 @@ public:
         int res = 0;
         vector<int> points(size, 0);
         for(int i = 0; i < size; ++i) {
-            if(nums[i] != 0)
-            {
-                points[(i + 1) % size] += 1;
-                points[(i + size - nums[i] + 1) % size] -= 1;
-            }
+            points[(i + 1) % size] += 1;
+            points[(i + size - nums[i] + 1) % size] -= 1;
         }
         for(int i = 0; i < size; ++i) {
-            if(i != 0){
-                points[i] += points[i - 1];
-            }
+            points[i] += i > 0 ? points[i - 1] : 0;
             if(points[i] > max_point) {
                 max_point = points[i];
                 res = i;
