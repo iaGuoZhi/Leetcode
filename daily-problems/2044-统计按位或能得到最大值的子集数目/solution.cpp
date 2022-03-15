@@ -1,6 +1,6 @@
-int ans = 0;
 class Solution {
     int size = 0;
+    int ans = 0;
     void search(vector<int> &nums, int expected_res, int begin)
     {
         if(begin >= size)
