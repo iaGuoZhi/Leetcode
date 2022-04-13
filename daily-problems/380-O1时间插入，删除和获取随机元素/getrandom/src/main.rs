@@ -1,0 +1,50 @@
+struct RandomizedSet {
+    s: Vec<i32>,
+}
+
+
+/**
+ * `&self` means the method takes an immutable reference.
+ * If you need a mutable reference, change it to `&mut self` instead.
+ */
+impl RandomizedSet {
+
+    fn new() -> Self {
+        RandomizedSet {
+            s : Vec::new(),
+        }
+    }
+    
+    fn insert(&self, val: i32) -> bool {
+        if (self.s).contains(&val) {
+            false
+        }else{
+            self.s.push(val);
+            true
+        }
+    }
+    
+    fn remove(&self, val: i32) -> bool {
+        if (self.s).contains(&val) {
+            for i in 0..(self.s.len()){
+                if self.s[i] == val {
+                    self.s.swap_remove(i);
+                    return true;
+                }
+            }
+        }
+    }
+    
+    fn get_random(&self) -> i32 {
+        let rand_number = rand::random::<usize>() % self.s.len();
+        self.s[rand_number]
+    }
+}
+
+/**
+ * Your RandomizedSet object will be instantiated and called as such:
+ * let obj = RandomizedSet::new();
+ * let ret_1: bool = obj.insert(val);
+ * let ret_2: bool = obj.remove(val);
+ * let ret_3: i32 = obj.get_random();
+ */
