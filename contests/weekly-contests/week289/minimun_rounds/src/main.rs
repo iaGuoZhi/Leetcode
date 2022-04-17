@@ -1,0 +1,26 @@
+use std::collections::HashMap;
+
+impl Solution {
+    pub fn minimum_rounds(tasks: Vec<i32>) -> i32 {
+        let mut count_map: HashMap<i32, i32> = HashMap::new();
+        let mut res : i32 = 0;
+
+        tasks.into_iter().for_each(|v| {
+            let task = count_map.entry(v).or_insert(0);
+            *task += 1;
+        });
+
+        for (key, value) in count_map.into_iter() {
+            if value <= 1 {
+                return -1;
+            }
+            if value % 3 == 0 {
+                res += (value / 3);
+            } else {
+                res += (value / 3 + 1);
+            }
+        }
+
+        return res;
+    }
+}
