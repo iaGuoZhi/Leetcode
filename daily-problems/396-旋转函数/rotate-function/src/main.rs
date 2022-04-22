@@ -1,0 +1,21 @@
+impl Solution {
+    pub fn max_rotate_function(nums: Vec<i32>) -> i32 {
+        let mut idx = 0;
+        let sum = nums.iter().sum();
+        let mut ans :i32;
+        let mut base = nums.iter().fold(0, |mut foo: i32, num| {
+            foo = idx * num;
+            idx += 1;
+            foo
+        });
+        ans = base;
+        nums.iter().rev().fold(base, |mut foo :i32, num| {
+            foo = foo + sum - num * (nums.len() as i32);
+            if foo > ans {
+                ans = foo;
+            }
+            foo
+        });
+        ans;
+    }
+}
