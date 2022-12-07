@@ -12,3 +12,33 @@ LeetCode
 |84-Largest-Rectangle-in-Histogram/|单调栈|https://leetcode.cn/problems/largest-rectangle-in-histogram/description/|
 |42-Trapping-Rain-Water/|计算出两个数组，表示每个节点左右两侧的最高点的高度|https://leetcode.cn/problems/trapping-rain-water/|
 |312-Burst-Balloons/|倒过来看这个过程，相当于插入气球|https://leetcode.cn/problems/burst-balloons/|
+
+## 广度/深度优先遍历
+
+|题目|思路|链接|
+|--|--|--|
+|207-Course-Schedule/|使用visited保存状态，visited[i]==1表示刚开始访问这个course，visited[i]==2表示结束，如果在递归过程中发现了visited[i]==1的节点，说明出现了环，有问题|https://leetcode.cn/problems/course-schedule/|
+
+## 排序
+
+|题目|思路|链接|
+|--|--|--|
+
+## 矩阵
+
+|题目|思路|链接|
+|--|--|--|
+|85-Maximal-Rectangle|转换成84，柱状图的最大矩形问题|https://leetcode.cn/problems/maximal-rectangle/|
+
+## 岛屿问题
+
+|题目|思路|链接|
+|--|--|--|
+|200-Number-Of-Islands|dfs每个岛屿点，然后标记为水域|https://leetcode.cn/problems/number-of-islands/|
+|827-Making-A-Large-Island/|跟上面一样的思路|https://leetcode.cn/problems/making-a-large-island|
+
+## 滑动窗口
+
+|题目|思路|链接|
+|--|--|--|
+|76-Minimum-Window-Substring/|滑动窗口+map记录当前各个字符的count，滑动窗口保证当前map里所有字符都达到了目标字符串的标准|https://leetcode.cn/problems/minimum-window-substring|
