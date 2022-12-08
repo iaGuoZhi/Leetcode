@@ -19,6 +19,12 @@ LeetCode
 |--|--|--|
 |207-Course-Schedule/|使用visited保存状态，visited[i]==1表示刚开始访问这个course，visited[i]==2表示结束，如果在递归过程中发现了visited[i]==1的节点，说明出现了环，有问题|https://leetcode.cn/problems/course-schedule/|
 
+## 单调栈
+
+|题目|思路|链接|
+|--|--|--|
+}1063-Number-of-Valid-Subarrays/|单调栈+节点产生的分数并不是在该节点处结算，而是在下一个比它高的节点|https://leetcode.cn/problems/number-of-valid-subarrays|
+
 ## 排序
 
 |题目|思路|链接|
