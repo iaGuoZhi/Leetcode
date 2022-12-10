@@ -23,7 +23,15 @@ LeetCode
 
 |题目|思路|链接|
 |--|--|--|
-}1063-Number-of-Valid-Subarrays/|单调栈+节点产生的分数并不是在该节点处结算，而是在下一个比它高的节点|https://leetcode.cn/problems/number-of-valid-subarrays|
+|1063-Number-of-Valid-Subarrays/|单调栈+节点产生的分数并不是在该节点处结算，而是在下一个比它高的节点|https://leetcode.cn/problems/number-of-valid-subarrays|
+|772-Basic-Calculator-III||https://leetcode.cn/problems/basic-calculator-iii/|
+|255-Verify-Preorder-Sequence-in-Binary-Search-Tree|https://leetcode.cn/problems/verify-preorder-sequence-in-binary-search-tree|
+
+## 并查集
+
+|题目|思路|链接|
+|--|--|--|
+|305-Number-ofIslands-II|实现一个并查集，与之前查过的节点union|https://leetcode.cn/problems/number-of-islands-ii/|
 
 ## 排序
 
