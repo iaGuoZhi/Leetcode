@@ -33,6 +33,18 @@ LeetCode
 |--|--|--|
 |305-Number-ofIslands-II|实现一个并查集，与之前查过的节点union|https://leetcode.cn/problems/number-of-islands-ii/|
 
+## 堆
+
+|题目|思路|链接|
+|--|--|--|
+|1199|转换成哈夫曼算法|https://leetcode.cn/problems/minimum-time-to-build-blocks/submissions/|
+
+## 贪心
+
+|题目|思路|链接|
+|--|--|--|
+|1102-Path-With-Maximum-Minimum-Value|每次找现有相邻点的最大值|https://leetcode.cn/problems/path-with-maximum-minimum-value|
+
 ## 排序
 
 |题目|思路|链接|
