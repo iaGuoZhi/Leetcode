@@ -44,7 +44,15 @@ LeetCode
 |题目|思路|链接|
 |--|--|--|
 |1102-Path-With-Maximum-Minimum-Value|每次找现有相邻点的最大值|https://leetcode.cn/problems/path-with-maximum-minimum-value|
+|1168-Optimize-Water-Distribution-in-a-Village|贪心+并查集|https://leetcode.cn/problems/optimize-water-distribution-in-a-village|
 
+## 二分
+
+|题目|思路|链接|
+|--|--|--|
+|774-Minimize-Max-Distance-to-Gas-Station|转换问题为求最小的最大距离，二分递归求出离答案最近的点即可|774-Minimize-Max-Distance-to-Gas-Station|
+
+## 矩阵
 ## 排序
 
 |题目|思路|链接|
