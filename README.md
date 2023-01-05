@@ -52,7 +52,12 @@ LeetCode
 |--|--|--|
 |774-Minimize-Max-Distance-to-Gas-Station|转换问题为求最小的最大距离，二分递归求出离答案最近的点即可|774-Minimize-Max-Distance-to-Gas-Station|
 
-## 矩阵
+## 回溯 
+
+|题目|思路|链接|
+|--|--|--|
+|254-Factor-Combinations| 回溯 | https://leetcode.cn/problems/factor-combinations/description/|
+
 ## 排序
 
 |题目|思路|链接|
@@ -63,6 +68,18 @@ LeetCode
 |题目|思路|链接|
 |--|--|--|
 |85-Maximal-Rectangle|转换成84，柱状图的最大矩形问题|https://leetcode.cn/problems/maximal-rectangle/|
+
+## KMP
+
+|题目|思路|链接|
+|--|--|--|
+|28-Find-the-Index-of-the-First-Occurrence-in-a-String/|KMP|https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string|
+
+## 字典树
+
+|题目|思路|链接|
+|--|--|--|
+|1032-Stream-of-Characters|字典树|https://leetcode.cn/contest/weekly-contest-133/problems/stream-of-characters/|
 
 ## 岛屿问题
 
@@ -76,3 +93,4 @@ LeetCode
 |题目|思路|链接|
 |--|--|--|
 |76-Minimum-Window-Substring/|滑动窗口+map记录当前各个字符的count，滑动窗口保证当前map里所有字符都达到了目标字符串的标准|https://leetcode.cn/problems/minimum-window-substring|
+|159-Longest-Substring-with-At-Most-Two-Distinct-Characters/|滑动窗口|https://leetcode.cn/problems/longest-substring-with-at-most-two-distinct-characters/|
